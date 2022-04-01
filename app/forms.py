@@ -7,5 +7,5 @@ class LoginForm(FlaskForm):
 	# declaradas como variables de clases
 	username = StringField('Username', validators=[DataRequired()])
 	password = PasswordField('Password', validators=[DataRequired()])
-	remember_user = BooleanField('Remember me')
+	remember_me = BooleanField('Remember me')
 	submit = SubmitField('Sign In')
